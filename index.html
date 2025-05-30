@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
@@ -23,11 +23,11 @@
 </head>
 
 <body style="font-family: 'Poppins', sans-serif;" class="text-white bg-[rgb(0,0,33)]  m-0 p-0">
-    <header>
-        <nav class="flex justify-around bg-[rgb(18,18,62)] p-4 h-20">
-            <div class="left  flex items-center text-[2.7rem] monoton-regular font-semibold ">Faisal's  &nbsp; &nbsp;  Portfolio</div>
+    <header class="relative md:static">
+        <nav class="flex justify-around bg-[rgb(18,18,62)] w-full md:w-full p-0 h-12 md:h-20 fixed top-0 md:static ">
+            <div class="left md:flex hidden items-center md:text-5xl monoton-regular font-semibold">Faisal's  &nbsp; &nbsp;  Portfolio</div>
             <div class="right flex items-center">
-                <ul class="flex gap-5 text-purple-50 text-[1.2rem] font-extrabold">
+                <ul class="flex gap-5 text-purple-50 text-[15px] md:text-[1.2rem] font-extrabold">
                     <li class="font-bold hover:text-purple-300 transition-all duration-200">
                         <a href="#obj" class="glow-on-hover">Aim</a>
                     </li>
@@ -52,45 +52,45 @@
     </header>
     <main>
 
-        <!-- This 1st section is for the introduction of the portfolio -->
-        <section class="firstSection flex justify-around items-center my-[12.5vh] ">
-            <div class="leftSection w-[30%] text-[2.5rem]  ">
-                Hi, My name is <span class="text-purple-600">Faisal</span>
-                <div>& I am a passionate </div>
+        <!-- This 1st section is for the introduction of the portfolio -->  
+        <section class="firstSection h-[80vh] md:h-[65vh] flex flex-col-reverse md:flex-row-reverse justify-center gap-9 md:gap-0 md:justify-around items-center my-[10px] md:my-[12.5vh]  md:pt-0 pt-1 ">
+            <div class="leftSection mx-0 w-[80vw] md:w-[30%] text-[1.5rem] md:text-[2.5rem] text-center">
+                Hi, My name is <span class="text-purple-600">Faisal </span>&
+                <div> I am a passionate </div>
                 <span id="element" class="text-purple-600"></span>
-                <div class="mt-6 flex items-center gap-4">
-                    <a href="/assets/faisalsResume.pdf" download
-                        class="px-4 py-1 h-10 bg-[#D8B4FE] text-purple-950 text-[17px] rounded-full hover:bg-purple-400  flex gap-1  justify-between items-center transition-all duration-300">
-                        <img src="/assets/imgs/download.svg" class="size-[25px]" alt=""><Span>Resume</Span>
-                    </a>
-
+                <div class="mt-6 flex justify-center items-center gap-4">
                     <a href="https://github.com/faisalzGIT" target="_blank"
                         class="px-1 py-1 text-[17px] text-purple-500 flex gap-1 border-[#23233f] border-[2px] hover:border-purple-200 rounded-full hover:text-white  transition-all duration-300"><img
-                            src="/assets/imgs/github.svg" class="size-[33px]" alt="">
+                            src="/assets/imgs/github.svg" class="size-[26px] md:size-[33px]" alt="">
                     </a>
+
+                    <a href="/assets/faisalsResume.pdf" download
+                        class="px-4 py-1 h-8 md:h-10 bg-[#D8B4FE] text-purple-950 text-[16px] md:text-[17px] rounded-full hover:bg-purple-400 flex gap-1 justify-between items-center transition-all duration-300">
+                        <img src="/assets/imgs/download.svg" class="size-[21px] md:size-[25px]" alt=""><Span>Resume</Span>
+                    </a>
+
 
                     <a href="https://linkedin.com/in/faisalz1" target="_blank"
                         class=" text-[17px] text-purple-500 flex gap-1  hover:text-white transition-all duration-200 "><img
                             src="/assets/imgs/linkedin.svg"
-                            class="size-[40px] border-[2px] border-[#23233f] hover:border-purple-200 rounded-[4px] p-[3px] m-0 transition-all duration-300"
+                            class="size-[36px] md:size-[40px] border-[2px] border-[#23233f] hover:border-purple-200 rounded-[4px] p-[3px] m-0 transition-all duration-300"
                             alt="">
                     </a>
-
                 </div>
 
 
             </div>
-            <div class="rightSection  w-[30%]"><img src="/assets/imgs/bg1.png" class="w-[60rem]" alt=""></div>
+            <div class="rightSection w-[60vw] mx-0 md:w-[30%] mb-0"><img src="/assets/imgs/bg1.png" class="w-[60vw] md:w-[60vh]" alt=""></div>
         </section>
 
-        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[40px] mx-[84px]">
+        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[5px] md:my-[40px] mx-[25px] md:mx-[84px]">
 
         <!-- This 2nd section is for the Career Objective -->
-        <section id="obj" class="secondSection bg-[rgb(0,0,33)] py-5">
+        <section id="obj" class="secondSection  my-[10px]  bg-[rgb(0,0,33)] py-5">
             <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-8">Career
+                <h2 class="text-2xl md:text-6xl w-fit font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-0 md:mb-8 m-auto">Career
                     Objective</h2>
-                <p class="text-purple-50 text-lg leading-relaxed text-center">
+                <p class="text-purple-50 text-[14px] w-[90vw] md:w-[90%] md:text-lg leading-relaxed text-center">
                     Passionate BCA student with an Intermediate experience in Fullstack Web development. Intermediate in
                     JavaScript, React.js, Node.js, Express.js, Tailwind CSS, and REST APIs; beginner in MongoDB and EJS.
                     Eager to solve real-world problems through full stack development and API Integration. Currently
@@ -100,13 +100,13 @@
 
         </section>
 
-        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[40px] mx-[84px]">
+        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[5px] md:my-[40px] mx-[25px] md:mx-[84px]">
 
 
         <!-- This 3nd section is for the work experiences -->
-        <!-- <section id="workExp" class="thirdSection Work-Experience-Section max-w-[80vw] m-auto h-[90vh]">
+        <!-- <section id="workExp" class="thirdSection  my-[10px]  Work-Experience-Section max-w-[80vw] m-auto h-[90vh]">
             <span class="text-gray-500">What have i done yet</span>
-            <h1 class="text-3xl font-semibold">Work Experience</h1>
+            <h1 class="text-2xl md:text-6xl font-semibold mb-0 md:mb-8">Work Experience</h1>
             <div class="bg-white mt-9 h-[1px] w-[80vw] flex gap-9">
                 <div class="vertical h-[93px] w-[1px] bg-white mx-[115px]">
                     <div class="title mt-24 w-40 ">
@@ -146,18 +146,18 @@
         </section> -->
 
         <!-- This 4th section is for the Skills -->
-        <section id="skills" class="fourthSection bg-[rgb(0,0,33)] py-5">
+        <section id="skills" class="fourthSection  my-[10px]  bg-[rgb(0,0,33)] py-5">
             <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular">SKILLS
+                <h2 class="text-2xl md:text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-0 md:mb-8">SKILLS
                 </h2>
                 <!-- <hr class="border-0 bg-[#9c97f1] h-[1px] my-[40px] mx-[84px]"> -->
 
 
-                <div class="grid grid-rows-3 ">
+                <div class="grid grid-rows-3  gap-0">
                     <!-- Frontend -->
-                    <div class="text-center flex flex-col gap-1.5">
-                        <h3 class="text-2xl text-purple-400 mr-1 ">Front-End Development</h3>
-                        <div class=" gap-4 mb-10 flex flex-wrap justify-center">
+                    <div class="text-center flex flex-col gap-1.5 pb-0">
+                        <h3 class="text-xl md:text-2xl text-purple-400 mr-1 ">Frontend Development</h3>
+                        <div class="text-sm md:text-lg gap-4  mb-7 md:mb-10 flex flex-wrap justify-center">
                             HTML &nbsp;|&nbsp; Tailwind CSS &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp; React.js
                             &nbsp;|&nbsp; Vite &nbsp;|&nbsp; EJS
                         </div>
@@ -165,32 +165,32 @@
 
                     <!-- Backend -->
                     <div class="text-center flex flex-col gap-1.5">
-                        <h3 class="text-2xl text-purple-400 mr-1 ">Back-End Development</h3>
-                        <div class="flex  gap-4 mb-10 flex-wrap justify-center">
+                        <h3 class="text-xl md:text-2xl text-purple-400 mr-1 ">Backend Development</h3>
+                        <div class="text-sm md:text-lg flex  gap-4 mb-7 md:mb-10 flex-wrap justify-center">
                             Node.js &nbsp;|&nbsp; Express.js &nbsp;|&nbsp; REST API Integration
                         </div>
                     </div>
 
                     <!-- Database -->
                     <div class="text-center flex flex-col gap-1.5">
-                        <h3 class="text-2xl text-purple-400 mr-1 ">Database</h3>
-                        <div class="flex  gap-4 mb-10 flex-wrap justify-center">
+                        <h3 class="text-xl md:text-2xl text-purple-400 mr-1 ">Database</h3>
+                        <div class="text-sm md:text-lg flex  gap-4 mb-7 md:mb-10 flex-wrap justify-center">
                             <div>MongoDB</div>
                         </div>
                     </div>
 
                     <!-- Tools -->
                     <div class="text-center flex flex-col gap-1.5">
-                        <h3 class="text-2xl text-purple-400 mr-1 ">Version Control & Tools</h3>
-                        <div class="flex  gap-4 mb-10 flex-wrap justify-center">
-                            <div>GitHub</div>
+                        <h3 class="text-xl md:text-2xl text-purple-400 mr-1 ">Version Control & Tools</h3>
+                        <div class="text-sm md:text-lg flex  gap-4 mb-7 md:mb-10 flex-wrap justify-center">
+                            <div>GitHub & Git</div>
                         </div>
                     </div>
 
                     <!-- Additional -->
                     <div class="text-center flex flex-col gap-1.5">
-                        <h3 class="text-2xl text-purple-400 mr-1 ">Programming Foundations</h3>
-                        <div class="flex  gap-4 mb-10 flex-wrap justify-center">
+                        <h3 class="text-xl md:text-2xl text-purple-400 mr-1 ">Programming Foundations</h3>
+                        <div class="text-sm md:text-lg flex gap-4 mb-7 md:mb-10 flex-wrap justify-center">
                             <div>C Programming</div>
                         </div>
 
@@ -198,24 +198,24 @@
                 </div>
         </section>
 
-        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[40px] mx-[84px]">
+        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[5px] md:my-[40px] mx-[25px] md:mx-[84px]">
 
         <!-- This 5th section is for the Projects -->
-        <section id="projects" class="fifthSection bg-[rgb(0,0,33)] py-5">
+        <section id="projects" class=" fifthSection  my-[10px]  bg-[rgb(0,0,33)] py-5">
             <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-8">PROJECTS
+                <h2 class="text-2xl md:text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-0 md:mb-8">PROJECTS
                 </h2>
                 <!-- <hr class="border-0 bg-[#9c97f1] h-[1px] my-[40px] mx-[84px]"> -->
 
 
-                <div class="grid grid-cols-2 gap-10 ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 ">
                     <!-- Frontend -->
                     <div class="text-center flex flex-col items-center gap-1.5">
                         <a href="https://drive.google.com/file/d/1uy7C_IcBG2idaT-Zc5Y0DSo9PqHmSIVD/view?usp=sharing"
                             target="_blank"
-                            class="text-2xl hover:text-purple-200 text-purple-400 mr-1 cursor-pointer hover:bg-purple-950 transition-all duration-300 px-3 py-1 rounded-full">Email
+                            class="text-xl md:text-2xl hover:text-purple-200 text-purple-400 mr-1 cursor-pointer hover:bg-purple-950 transition-all duration-300 px-3 py-1 rounded-full">Email
                             Preview Website</a>
-                        <div class="mb-10 flex text-center w-[90%]">
+                        <div class="mb-6 md:mb-10  flex text-center w-[90%]">
                             built an email viewer that fetches and displays Gmail data using the Gmail API, with a
                             dynamic interface.
                         </div>
@@ -224,9 +224,9 @@
                     <!-- Backend -->
                     <div class="text-center flex flex-col items-center gap-1.5">
                         <a href="https://tasking-defining-tasks.netlify.app/" target="_blank"
-                            class="text-2xl text-purple-400 hover:text-purple-200 mr-1 cursor-pointer hover:bg-purple-950 transition-all duration-300 px-3 py-1 rounded-full">Todo
+                            class="text-xl md:text-2xl text-purple-400 hover:text-purple-200 mr-1 cursor-pointer hover:bg-purple-950 transition-all duration-300 px-3 py-1 rounded-full">Todo
                             Website by React</a>
-                        <div class="mb-10 flex text-center w-[90%]">
+                        <div class="mb-6 md:mb-10  flex text-center w-[90%]">
                             To create a responsive Todo web app using React.js and Tailwind CSS for efficient task
                             management.
                         </div>
@@ -236,9 +236,9 @@
                     <div class="text-center flex flex-col items-center gap-1.5">
                         <a href="https://drive.google.com/file/d/1SWrhOSeyj6W1MIJO6BX53t35k6yDOzXf/view?usp=sharing"
                             target="_blank"
-                            class="text-2xl hover:text-purple-200 text-purple-400 mr-1 cursor-pointer hover:bg-purple-950 transition-all duration-300 px-3 py-1 rounded-full">Spotify
+                            class="text-xl md:text-2xl hover:text-purple-200 text-purple-400 mr-1 cursor-pointer hover:bg-purple-950 transition-all duration-300 px-3 py-1 rounded-full">Spotify
                             similar clone</a>
-                        <div class="mb-10 flex text-center w-[90%]">
+                        <div class="mb-6 md:mb-10  flex text-center w-[90%]">
                             Developed a Spotify-inspired music UI with custom features, responsive design, and
                             interactive playback controls.
                         </div>
@@ -247,9 +247,9 @@
                     <!-- Tools -->
                     <div class="text-center flex flex-col items-center gap-1.5">
                         <a href="https://faisals-xclone-cwh.netlify.app/" target="_blank"
-                            class="text-2xl hover:text-purple-200 text-purple-400 mr-1 cursor-pointer hover:bg-purple-950 transition-all duration-300 px-3 py-1 rounded-full">X.com
+                            class="text-xl md:text-2xl hover:text-purple-200 text-purple-400 mr-1 cursor-pointer hover:bg-purple-950 transition-all duration-300 px-3 py-1 rounded-full">X.com
                             Clone</a>
-                        <div class="mb-10 flex text-center w-[90%]">
+                        <div class="mb-6 md:mb-10  flex text-center w-[90%]">
                             Developed X.com clone using Tailwind CSS, focusing on layout, and UI consistency.
                         </div>
                     </div>
@@ -257,25 +257,23 @@
                 </div>
         </section>
 
-        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[40px] mx-[84px]">
+        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[5px] md:my-[40px] mx-[25px] md:mx-[84px]">
 
         <!-- This 6th section is for the Languages -->
-        <section id="langs" class="sixSection bg-[rgb(0,0,33)] py-5">
+        <section id="langs" class="sixSection  my-[10px]  bg-[rgb(0,0,33)] py-5">
             <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-8">
+                <h2 class="text-2xl md:text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-0 md:mb-8">
                     Languages</h2>
                 <!-- <hr class="border-0 bg-[#9c97f1] h-[1px] my-[40px] mx-[84px]"> -->
 
-
-                <div class="grid grid-cols-2 gap-1">
-
+                <div class="grid md:grid-cols-2 grid-cols-1  gap-1">
                     <!-- Hindi -->
                     <div class="text-center flex flex-col items-center gap-1.5">
-                        <h3 class="text-2xl text-purple-400 mr-1 ">Hindi (Native)</h3>
+                        <h3 class="text-lg md:text-2xl text-purple-400 mr-1 ">Hindi (Native)</h3>
                     </div>
                     <!-- English -->
                     <div class="text-center flex flex-col items-center gap-1.5">
-                        <h3 class="text-2xl text-purple-400 mr-1 ">English (Intermediate)</h3>
+                        <h3 class="text-lg md:text-2xl text-purple-400 mr-1 ">English (Intermediate)</h3>
                     </div>
 
 
@@ -283,67 +281,55 @@
                 </div>
         </section>
 
-        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[40px] mx-[84px]">
+        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[5px] md:my-[40px] mx-[25px] md:mx-[84px]">
 
         <!-- This 7th section is for the About me -->
-        <section id="about" class="seventhSection bg-[rgb(0,0,33)] py-5">
+        <section id="about" class="seventhSection  my-[10px]  bg-[rgb(0,0,33)] py-5">
             <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-8">About Me
+                <h2 class="text-2xl md:text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-0 md:mb-8">About Me
                 </h2>
                 <div class="text-purple-50 text-lg leading-relaxed text- mb-8">
-                    <p>
-                        Hello! I’m Mohammad Faisal a Full Stack Web Developer and BCA student with a passion for creating
-                        impactful and efficient web applications. I am Experienced in JavaScript, React.js, Node.js,
-                        Express.js, Tailwind
-                        CSS, and REST APIs, and I am committed to continuously improving my skills and staying
-                        up-to-date
-                        with the latest technologies.
-                    </p>
-                    <br>
-                    <p>
-                        I am driven by the desire to solve real-world problems through thoughtful, scalable solutions.
-                        My
-                        goal is to build high-quality applications that meet user needs and provide a seamless user
-                        experience. I enjoy collaborating with teams and learning from others.
-                    </p>
-                    <br>
-                    <p>
-                        If you’re interested in collaborating or have any inquiries, feel free to reach out. I’m always
-                        open
-                        to new opportunities and challenges that allow me to grow as a developer and make a positive
-                        impact.
-                    </p>
+                   <p>
+  Hello! I’m Mohammad Faisal, a Frontend Web Developer and BCA student passionate about building impactful and efficient web applications. I work with JavaScript, React.js, Tailwind CSS, and REST APIs. I also know Backend at beginner level.
+</p>
+<br>
+<p>
+  
+I'm always eager to learn, grow, and collaborate with others.
+  Feel free to reach out if you're interested in working together or have any questions. I'm open to new opportunities and challenges.
+</p>
+
                 </div>
 
         </section>
 
-        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[40px] mx-[84px]">
+        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[5px] md:my-[40px] mx-[25px] md:mx-[84px]">
 
         <!-- This 8th section is for the Contact me -->
-        <section id="contactMe" class="eigthSection bg-[rgb(0,0,33)] py-5">
+        <section id="contactMe" class="eigthSection  my-[10px]  bg-[rgb(0,0,33)] py-5">
             <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-8">Contact
+                <h2 class="text-2xl md:text-6xl font-bold text-white tracking-widest pb-7 text-center monoton-regular mb-0 md:mb-8">Contact
                     Me
                 </h2>
 
                 <div class="text-purple-50 text-lg leading-relaxed text- mb-8">
                     <p>
-                    <div class="flex flex-col items-center gap-4">
-                        <p class="flex gap-1.5 items-center"><img src="/assets/imgs/mail.svg" alt=""><a href="https://mail.google.com/mail/?view=cm&to=muhammadfaisal95610@gmail.com" target="_blank" class="text-purple-50 hover:text-purple-200">muhammadfaisal95610@gmail.com</a></p>
-                        <p class="flex gap-1 items-center"> <img src="/assets/imgs/call.svg" alt=""><a href="tel:+919561070039" class="text-purple-50 hover:text-purple-300">+91 9561070039</a></p>
+                    <div class="flex flex-col items-center gap-4 text-[15px] md:text-xl">
+                        <p class="flex gap-1.5 items-center text-purple-50 hover:text-purple-300"><img src="/assets/imgs/mail.svg" alt="">muhammadfaisal95610@gmail.com</p>
+                        <p class="flex gap-1 items-center text-purple-50 hover:text-purple-300"> <img src="/assets/imgs/call.svg" alt="">+91 9561070039</p>
                         <div class="flex gap-4">
-                            <a href="https://github.com/faisalzGIT" target="_blank" class="px-1 py-1 text-[17px] text-purple-500 flex gap-1 border-[#23233f] border-[2px] hover:border-purple-200 rounded-full hover:text-white  transition-all duration-300"><img src="/assets/imgs/github.svg" class="size-[33px]" alt="">
+                            <a href="https://github.com/faisalzGIT" target="_blank" class="px-1 py-1 text-[17px] text-purple-500 flex gap-1 border-[#23233f] border-[2px] hover:border-purple-200 rounded-full hover:text-white  transition-all duration-300"><img src="/assets/imgs/github.svg" class="size-[28px] md:size-[33px]" alt="">
                             </a>
                    
                             <a href="https://linkedin.com/in/faisalz1" target="_blank"
-                                class=" text-[17px] text-purple-500 flex gap-1  hover:text-white transition-all duration-200 "><img src="/assets/imgs/linkedin.svg" class="size-[40px] border-[2px] border-[#23233f] hover:border-purple-200 rounded-[4px] p-[3px] m-0 transition-all duration-300" alt="">
+                                class=" text-[17px] text-purple-500 flex gap-1  hover:text-white transition-all duration-200 "><img src="/assets/imgs/linkedin.svg" class="size-[36px] md:size-[40px] border-[2px] border-[#23233f] hover:border-purple-200 rounded-[4px] p-[3px] m-0 transition-all duration-300" alt="">
                             </a>
                         </div>
                     </div>
 
         </section>
 
-        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[40px] mx-[84px]">
+        <hr class="border-0 bg-[#9c97f1] h-[1.2px] my-[5px] md:my-[40px] mx-[25px] md:mx-[84px]">
 
         <footer>
             <div class="text-center text-gray-500 mt-10 mb-5">
